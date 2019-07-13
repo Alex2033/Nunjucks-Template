@@ -1,0 +1,25 @@
+{% set title = 'Template' %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>{{ title }}</title>
+		{% include "src/nunjucks/parts/head.njk" %}
+	</head>
+
+	<body>
+
+		{# begin wrapper  #}
+		<div class="wrapper">
+			{% include "src/nunjucks/parts/header.njk" %}
+
+
+			{% include "src/nunjucks/parts/footer.njk" %}
+		</div>	
+		{# end wrapper  #}	
+
+		{% include "src/nunjucks/parts/scripts.njk" %}
+	</body>	
+
+</html>
