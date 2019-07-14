@@ -10,14 +10,15 @@
 
 	<body>
 
-		{# begin wrapper  #}
+		{# begin wrapper #}
 		<div class="wrapper">
 			{% include "src/nunjucks/parts/header.njk" %}
 
+			{% include "src/nunjucks/parts/content.njk" %}
 
 			{% include "src/nunjucks/parts/footer.njk" %}
 		</div>	
-		{# end wrapper  #}	
+		{# end wrapper #}	
 
 		{% include "src/nunjucks/parts/scripts.njk" %}
 	</body>	
